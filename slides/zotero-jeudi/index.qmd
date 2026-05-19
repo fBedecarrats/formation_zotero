@@ -1,0 +1,130 @@
+---
+title: Zotero pour une bibliographie ouverte, collaborative et reproductible
+subtitle: PSF CREONS · Jeudi 28 mai 2026
+format:
+  clean-revealjs:
+    slide-number: true
+    menu: true
+    preview-links: auto
+    transition: fade
+    footer: PSF CREONS · Atelier Zotero
+    chalkboard: true
+author:
+  - name: Florent Bédécarrats
+date: 2026-05-28
+---
+
+## Objectif de la séance
+
+À la fin de l'atelier, vous devez pouvoir :
+
+- importer correctement une référence
+- corriger les métadonnées essentielles
+- organiser une petite bibliothèque de travail
+- partager une bibliographie ou une collection
+- produire une citation et une bibliographie
+
+## Pourquoi Zotero dans CREONS ?
+
+Zotero n'est pas un outil isolé.
+
+Il soutient :
+
+- la science ouverte
+- la mutualisation des pratiques
+- la reproductibilité des revues de littérature
+- la circulation des références entre antennes
+- la transmission locale dans une logique de formation de formateurs
+
+## Le cœur de l'atelier
+
+Le noyau de la séance tient en cinq verbes :
+
+1. importer
+2. modifier
+3. organiser
+4. partager
+5. citer
+
+## Importer
+
+Sources à tester pendant l'atelier :
+
+- DOI
+- pages d'éditeurs
+- HAL
+- OpenEdition
+- Cairn
+- Google Scholar
+- PDF
+- pages web institutionnelles
+
+## Corriger
+
+Une référence importée n'est pas une référence validée.
+
+Points à vérifier :
+
+- auteur ou institution
+- année
+- titre
+- type de document
+- revue ou éditeur
+- DOI ou URL
+
+## Organiser
+
+Bonnes pratiques minimales :
+
+- utiliser des collections simples
+- éviter de multiplier les tags
+- ajouter une note courte quand c'est utile
+- repérer les doublons
+- garder des règles communes pour le travail collectif
+
+## Partager
+
+Les groupes Zotero sont utiles pour :
+
+- construire une bibliographie commune
+- faire circuler les références entre sites
+- capitaliser d'une session à l'autre
+- préparer une transmission locale après CREONS
+
+## Exercice fil rouge
+
+Par petit groupe :
+
+1. importer 5 références
+2. corriger les champs essentiels
+3. ajouter un tag commun
+4. rédiger une note courte
+5. repérer les doublons
+6. générer une bibliographie finale
+
+## Points de vigilance
+
+- le connecteur navigateur peut échouer
+- les PDF sont souvent mal reconnus
+- les rapports sont mal typés
+- Word et LibreOffice ne réagissent pas toujours pareil
+- mieux vaut 5 références propres que 20 références sales
+
+## Sortie attendue
+
+À la fin de l'atelier, chaque participant·e repart avec :
+
+- une installation fonctionnelle
+- une mini-bibliothèque propre
+- au moins une collection organisée
+- une référence corrigée manuellement
+- une bibliographie générée automatiquement
+- une méthode réutilisable localement
+
+## Suite du travail
+
+Après la séance, on pourra produire :
+
+- une fiche exercice
+- une fiche mémo de bonnes pratiques
+- une version courte réutilisable pour une formation locale

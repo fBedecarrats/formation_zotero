@@ -1,0 +1,7 @@
+project:
+  type: default
+  output-dir: docs
+  render:
+    - slides/zotero-jeudi/index.qmd
+
+lang: fr
