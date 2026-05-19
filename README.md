@@ -1,37 +1,42 @@
 # formation_zotero
 
-Structure de travail du dossier. On s'y tient pour les prochaines itérations.
+Préparation de la session **Zotero** pour le programme **PSF CREONS**.
 
-## Arborescence de référence
+## Où se trouvent les éléments principaux ?
 
-- `documentation/01_sources/` : sources brutes et documents de référence
-- `documentation/02_planning/` : cadrage, notes, checklist, préparation
-- `slides/zotero-jeudi/` : présentation Quarto Reveal.js de la séance
-- `docs/` : rendus HTML générés pour diffusion ou publication
-- `handouts/` : fiches à distribuer aux participant·es
-- `assets/images/` : images et logos utilisés dans les supports
-- `_extensions/` : extensions Quarto installées dans le projet
+- [documentation/01_sources](documentation/01_sources) : sources brutes et documents de référence
+- [documentation/02_planning](documentation/02_planning) : notes de préparation, cadrage, checklist
+- [slides/zotero-jeudi](slides/zotero-jeudi) : source de la présentation Quarto
+- [docs/slides/zotero-jeudi/index.html](docs/slides/zotero-jeudi/index.html) : rendu HTML
+- [assets/images](assets/images) : images et logos utilisés dans les slides
+- [handouts](handouts) : fiches à distribuer
 
-## Conventions
+## Fichier principal
 
-1. Tout document source externe va dans `documentation/01_sources/`.
-2. Toute note de travail ou de préparation va dans `documentation/02_planning/`.
-3. Toute présentation va dans `slides/zotero-jeudi/`.
-4. Tout rendu HTML généré va dans `docs/`.
-5. Toute fiche de distribution va dans `handouts/`.
-6. Toute image ou logo va dans `assets/images/`.
+La présentation est éditée ici :
 
-## Présentation
+- [slides/zotero-jeudi/index.qmd](slides/zotero-jeudi/index.qmd)
 
-Le thème de présentation retenu est :
-- `grantmcdermott/quarto-revealjs-clean`
+## Rendu
 
-Commande de rendu :
+Depuis la racine du projet :
 
 ```bash
 quarto render
 ```
 
-Le rendu courant est généré ici :
+Le rendu est généré dans :
 
-- `docs/slides/zotero-jeudi/index.html`
+- [docs/slides/zotero-jeudi/index.html](docs/slides/zotero-jeudi/index.html)
+
+## Organisation retenue
+
+- les **sources externes** vont dans [documentation/01_sources](documentation/01_sources)
+- les **notes de travail** vont dans [documentation/02_planning](documentation/02_planning)
+- les **slides** vont dans [slides/zotero-jeudi](slides/zotero-jeudi)
+- les **rendus HTML** vont dans [docs](docs)
+- les **images** vont dans [assets/images](assets/images)
+
+## Thème utilisé
+
+- `grantmcdermott/quarto-revealjs-clean`
