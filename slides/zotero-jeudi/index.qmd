@@ -11,6 +11,7 @@ format:
     chalkboard: true
 author:
   - name: Florent Bédécarrats
+  - name: Manato
 date: 2026-05-28
 ---
 
@@ -18,13 +19,11 @@ date: 2026-05-28
 
 À la fin de l'atelier, vous devez pouvoir :
 
-- installer un environnement Zotero fonctionnel
-- importer correctement une référence
-- corriger les métadonnées essentielles
-- organiser une petite bibliothèque de travail
-- partager une bibliographie ou une collection
-- produire une citation et une bibliographie
-- transmettre cette formation dans un format court auprès de vos pairs
+- **installer** un environnement Zotero fonctionnel
+- **importer** et **corriger** une référence
+- **organiser** et **partager** une petite bibliothèque
+- **citer** dans un document et produire une bibliographie
+- **transmettre** cette formation dans un format court
 
 ::: notes
 Insister dès l'ouverture sur la logique de formation de formateurs.
@@ -36,12 +35,10 @@ Le verbe important à ajouter est `transmettre` : l'objectif n'est pas seulement
 
 En recherche, et en particulier en thèse, un tel outil devient vite essentiel pour :
 
-- ne pas perdre ses références
-- retrouver rapidement un texte déjà lu
-- conserver une trace propre des sources
-- éviter les bibliographies bricolées à la fin
-- citer de manière cohérente dans les écrits
-- préparer une revue de littérature plus rigoureuse
+- **retrouver** vite ses sources
+- **garder** une trace propre des lectures
+- **citer** sans bricoler à la fin
+- **rendre** la revue de littérature plus rigoureuse
 
 ::: notes
 Cette diapo doit être générale, pas spécifique à CREONS.
@@ -51,15 +48,25 @@ L'idée est de partir des problèmes concrets de la recherche : accumulation de 
 
 ## Pourquoi Zotero ?
 
+::: columns
+::: {.column width="45%"}
 Zotero est un bon choix parce qu'il est :
 
-- libre et gratuit
-- multiplateforme : Windows, Linux, macOS
-- simple à prendre en main
-- bien intégré au navigateur
-- compatible avec Word et LibreOffice
-- adapté au partage de bibliothèques et au travail collectif
-- suffisamment robuste pour la recherche, tout en restant facile à transmettre
+- **libre**, **gratuit**, **multiplateforme**
+- **simple** à prendre en main
+- bien intégré au **navigateur** et au **traitement de texte**
+- adapté au **partage** et au **travail collectif**
+- assez robuste pour la recherche, assez simple pour être transmis
+:::
+
+::: {.column width="55%"}
+![](../../assets/images/zotero_logo.svg){width="28%" fig-alt="Logo Zotero"}
+
+![](../../assets/images/zotero_interface.png){width="100%" fig-alt="Vue générale de l'interface Zotero"}
+
+<small>Source : documentation officielle Zotero.</small>
+:::
+:::
 
 ::: notes
 Ne pas présenter Zotero comme le seul outil possible, mais comme le plus pertinent pour ce public.
@@ -75,7 +82,7 @@ Avant de commencer, il faut vérifier trois briques :
 - le connecteur Zotero du navigateur
 - Word ou LibreOffice pour tester l'insertion de citations
 
-Éventuellement aussi :
+En plus, si possible :
 
 - un compte Zotero pour la synchronisation et le partage
 
@@ -107,11 +114,10 @@ Le dernier verbe, `transmettre`, doit être explicité : il annonce déjà la fi
 
 Sources à tester pendant l'atelier :
 
-- Google Scholar
-- DOI, ISBN...
-- Portail des revues
+- DOI / ISBN
+- page de revue ou portail documentaire
 - PDF
-- pages web
+- page web
 
 ::: notes
 Montrer plusieurs portes d'entrée, mais rappeler que l'import automatique n'est qu'un point de départ.
@@ -145,9 +151,8 @@ Bonnes pratiques minimales :
 
 - utiliser des collections simples
 - éviter de multiplier les tags
-- ajouter une note courte quand c'est utile
 - repérer les doublons
-- garder des règles communes pour le travail collectif
+- garder des règles communes dans le travail collectif
 
 ::: notes
 Faire distinguer `collections`, `tags`, `notes` et `doublons`.
@@ -161,8 +166,7 @@ Les groupes Zotero sont utiles pour :
 
 - construire une bibliographie commune
 - faire circuler les références entre sites
-- capitaliser d'une session à l'autre
-- préparer une transmission locale après CREONS
+- capitaliser et retransmettre plus facilement
 
 ::: notes
 Relier cette diapo à la logique de coopération et de mutualisation.
@@ -172,15 +176,23 @@ Expliquer qu'un groupe Zotero n'est pas seulement un espace technique : c'est un
 
 ## Citer et produire une bibliographie
 
-À tester pendant l'atelier :
+::: columns
+::: {.column width="50%"}
+À tester pendant l'atelier : 
 
 - insérer une citation dans Word ou LibreOffice
-- changer de style bibliographique
-- générer automatiquement une bibliographie
-- dans Quarto ou R Markdown, citer avec une bibliographie `.bib` exportée depuis Zotero et des clés du type `@dupont2024`
-- dans LaTeX, utiliser un export BibTeX/BibLaTeX depuis Zotero, puis `\cite{}` ou variantes selon le style
-- dans RStudio et Positron, profiter de l'aide d'édition pour les documents Quarto/R Markdown : autocomplétion des citations, rendu rapide, travail direct sur les fichiers `.qmd` ou `.Rmd`
+- changer de style, générer une bibliographie
+- dans Quarto / R Markdown : `.bib` + `@citekey`
+- dans LaTeX : export BibTeX / BibLaTeX + `\cite{}`
 - éviter les corrections manuelles trop tôt dans le document
+:::
+
+::: {.column width="50%"}
+![](../../assets/images/zotero_citation_dialog.png){width="100%" fig-alt="Boîte de dialogue d'insertion de citation Zotero"}
+
+<small>Source : documentation officielle Zotero.</small>
+:::
+:::
 
 ::: notes
 Cette diapo permet de fermer la boucle : on ne gère pas une bibliothèque pour elle-même, mais pour écrire, citer et partager.
@@ -211,9 +223,8 @@ Insister sur la qualité plutôt que la quantité. L'objectif n'est pas de colle
 
 - le connecteur navigateur peut échouer
 - les PDF sont souvent mal reconnus
-- les rapports sont mal typés
-- Word et LibreOffice ne réagissent pas toujours pareil
-- le mode suivi des modifications peut casser les codes de champs des citations si on modifie directement un appel de citation
+- les rapports sont souvent mal typés
+- le suivi des modifications peut casser les codes de champs des citations
 - mieux vaut 5 références propres que 20 références sales
 
 ::: notes
@@ -230,10 +241,8 @@ Ajouter un avertissement très concret sur le `Suivi des modifications` dans Wor
 
 - une installation fonctionnelle
 - une mini-bibliothèque propre
-- au moins une collection organisée
-- une référence corrigée manuellement
-- une bibliographie générée automatiquement
-- une méthode réutilisable localement
+- une citation et une bibliographie générées automatiquement
+- un canevas réutilisable localement en **2h**
 
 ::: notes
 Rappeler que la sortie attendue n'est pas seulement individuelle.
@@ -247,8 +256,8 @@ Version courte à transmettre ensuite :
 
 1. 15 min · pourquoi un outil bibliographique et pourquoi Zotero
 2. 20 min · installation et vérifications
-3. 25 min · importer des références
-4. 25 min · corriger et organiser
+3. 25 min · importer et corriger
+4. 25 min · organiser et partager
 5. 20 min · citer dans un document
 6. 15 min · partage, questions, ressources
 
@@ -264,7 +273,7 @@ Après la séance, on pourra produire :
 
 - une fiche exercice
 - une fiche mémo de bonnes pratiques
-- une version courte réutilisable pour une formation locale
+- une version courte réutilisable localement
 
 ::: notes
 Conclure sur les livrables et la suite du travail.
@@ -274,15 +283,14 @@ Cette diapo peut aussi servir à annoncer ce qui sera partagé après l'atelier.
 
 ## Index des annexes
 
-Annexes proposées pour aller plus loin :
 
-1. stockage Zotero avec une adresse IRD
-2. extension du stockage via WebDAV
-3. tour d'horizon des applications mobiles
-4. fonctionnalités avancées et veille Zotero
-5. zoom sur Zotero 9
-6. extensions et astuces utiles
-7. retours pédagogiques et usages avancés
+- stockage Zotero avec une adresse IRD
+- tour d'horizon des applications mobiles
+- veille récente : Retraction Watch, Zotero 7 à 9
+- extension du stockage via WebDAV
+- zoom sur Zotero 9
+- extensions et astuces utiles
+- retours pédagogiques et usages avancés
 
 ::: notes
 Cette diapo permet de signaler clairement que la suite est optionnelle.
@@ -294,9 +302,9 @@ Elle est utile si tu veux garder un cœur de séance resserré et réserver les 
 
 À mentionner aux participant·es concerné·es :
 
-- l'IRD a souscrit un abonnement permettant à toute personne disposant d'une adresse mail IRD de bénéficier d'une capacité de stockage illimitée sur Zotero
-- si le compte Zotero utilise déjà une adresse IRD, l'avantage s'applique automatiquement
-- si le compte principal utilise une autre adresse, il suffit d'ajouter l'adresse IRD comme adresse additionnelle dans le profil Zotero
+- adresse IRD = stockage illimité sur Zotero
+- si le compte utilise déjà l'adresse IRD, l'avantage s'applique automatiquement
+- sinon, ajouter l'adresse IRD comme adresse secondaire dans le profil
 
 Rappel utile : sans cela, le stockage gratuit des fichiers joints est limité à 300 Mo.
 
@@ -310,7 +318,7 @@ Elle est utile pour les collègues IRD, mais ne doit pas alourdir le cœur de la
 
 Il est aussi possible d'étendre le stockage des fichiers joints avec un serveur WebDAV, par exemple un service institutionnel.
 
-Exemple à explorer :
+- piste à explorer :
 
 - IRD Drive de l'UMI SOURCE, si cette solution est disponible et pertinente localement
 - ressource de référence : https://zotero.hypotheses.org/4791
@@ -321,18 +329,18 @@ Mentionner cette piste comme option avancée, pas comme prérequis.
 Elle peut intéresser les personnes qui gèrent beaucoup de PDF ou qui souhaitent un stockage institutionnel. Ne pas ouvrir ce point trop tôt dans la formation principale.
 :::
 
-## Annexe · Tour d'horizon des applications mobiles
+## Annexe · Tour d'horizon des applications mobiles {.smaller}
 
 Zotero existe aussi sur mobile :
 
-- **iOS** : synchro des bibliothèques personnelles et de groupe, lecture et annotation des PDF, notes, génération de citations et bibliographies, sauvegarde depuis Safari ou d'autres apps, scan de code-barres et DOI
-- **Android** : synchro, lecture et annotation des PDF, ajout par DOI/ISBN/PMID, récupération des métadonnées depuis des PDF, ajout depuis le navigateur ou d'autres apps, scan de codes-barres
+- **iOS** : synchro, lecture/annotation PDF, capture depuis Safari, scan DOI/code-barres
+- **Android** : synchro, annotation PDF, ajout par identifiants, récupération de métadonnées PDF, scan ISBN
 
 À retenir :
 
 - utile pour lire, annoter et capturer des références en mobilité
 - pratique pour reprendre ensuite son travail sur ordinateur
-- bon argument pour montrer que Zotero peut accompagner tout le cycle de travail documentaire
+- bon argument pour montrer que Zotero accompagne tout le cycle documentaire
 - sur Android, un réglage permet aussi d'utiliser un stockage WebDAV compatible
 - le scan d'ISBN ouvre des usages intéressants pour rétro-cataloguer rapidement une petite bibliothèque papier
 
@@ -347,15 +355,15 @@ Sur iOS, tu peux mentionner la génération de bibliographies et la capture via 
 Quelques évolutions intéressantes à signaler :
 
 - **articles rétractés** : Zotero peut signaler des publications rétractées grâce à l'intégration avec **Retraction Watch** et avertit aussi au moment de citer
-- **Zotero 7** : nouvelle interface, mode sombre, lecteur amélioré, EPUB et snapshots web annotables, nouvelles annotations, meilleure performance
-- **Zotero 8** : nouveau dialogue de citation, annotations visibles et recherchables dans la bibliothèque, renommage continu des fichiers, modes de lecture plus riches
-- **Zotero 9** : lecture audio (*Read Aloud*), collection *Recently Read*, insertion directe d'annotations dans les traitements de texte, suivi plus fin des contributions en bibliothèque de groupe
+- **Zotero 7** : interface revue, lecteur enrichi, EPUB et snapshots annotables
+- **Zotero 8** : citation améliorée, annotations visibles, renommage continu des fichiers
+- **Zotero 9** : lecture audio, *Recently Read*, annotations insérées dans les traitements de texte
 
 Pourquoi c'est intéressant pédagogiquement :
 
-- cela montre que Zotero continue d'évoluer vite
+- Zotero évolue vite
 - certaines fonctions renforcent la lecture critique et la traçabilité
-- d'autres améliorent directement les usages collectifs et la rédaction
+- d'autres améliorent directement la rédaction et le travail collectif
 
 ::: notes
 Cette diapo sert de veille légère, pas de catalogue complet.
@@ -365,21 +373,30 @@ Pour les articles rétractés, préciser que Zotero s'appuie sur Retraction Watc
 
 ## Annexe · Zoom sur Zotero 9
 
+::: columns
+::: {.column width="48%"}
 Points saillants de la version 9 :
 
-- **Lecture à haute voix** sur PDF, EPUB et captures web, avec reprise synchronisée entre appareils
-- **Lectures récentes** : nouvelle collection pour retrouver rapidement les documents récemment consultés
-- **Ajouter une annotation** directement dans Word ou LibreOffice, sans passer par une note intermédiaire
+- **Lecture à haute voix** sur PDF, EPUB et captures web
+- **Lectures récentes** pour retrouver vite un document lu
+- **Ajouter une annotation** directement dans Word ou LibreOffice
 - **Ajouté par** / **Modifié par** dans les bibliothèques de groupe
-- **renommage des fichiers par groupe** pour harmoniser les pratiques collectives
-- **meilleures performances** : moins de mémoire au démarrage et synchronisation plus efficace
-- **connexion via le Web** : meilleure compatibilité avec les gestionnaires de mots de passe et ouverture vers l'authentification à deux facteurs
+- **renommage par groupe** pour harmoniser les pratiques collectives
+- **connexion via le Web** plus sûre et plus simple
 
 À noter :
 
 - la lecture à haute voix de haute qualité demande une connexion internet et un compte Zotero
 - les voix de meilleure qualité sont liées aux offres de stockage Zotero
 - la lecture à haute voix doit aussi arriver sur iOS et Android
+:::
+
+::: {.column width="52%"}
+![](../../assets/images/zotero_read_aloud.png){width="100%" fig-alt="Fonction Read Aloud de Zotero 9"}
+
+<small>Source : blog officiel Zotero, Zotero 9.</small>
+:::
+:::
 
 ::: notes
 Cette diapo peut servir de conclusion prospective.
@@ -396,11 +413,11 @@ Quelques pistes utiles à connaître :
 - **Zotmoov** : aide à copier, déplacer et organiser les fichiers joints dans des répertoires externes
 - **BetterBibTeX** : très utile pour des exports BibTeX stables, personnalisés et plus propres
 
-Trucs pratiques à signaler :
+Astuce rapides :
 
-- on peut `dépersonnaliser` un export BibTeX en excluant notes, fichiers et marqueurs avec BetterBibTeX
-- on peut utiliser des **émoticônes dans les marqueurs** pour repérer visuellement certaines références
-- certaines références, notamment issues de **PsycInfo**, peuvent bloquer la synchronisation à cause de champs trop longs et nécessiter un nettoyage
+- `dépersonnaliser` un export BibTeX avec BetterBibTeX
+- utiliser des **émoticônes dans les marqueurs**
+- surveiller certaines références **PsycInfo** qui peuvent bloquer la synchronisation
 
 ::: notes
 À présenter comme une boîte à outils optionnelle.
@@ -419,7 +436,7 @@ Leçons utiles pour une formation de formateurs :
 
 - distinguer l'apprentissage de l'outil et le travail académique demandé
 - faire créer les comptes Zotero avant la séance
-- anticiper l'entrée dans les groupes Zotero pour éviter les blocages techniques
+- anticiper l'entrée dans les groupes Zotero
 - garder une organisation simple : une bibliothèque de groupe, puis des collections par équipe ou thème
 
 ::: notes
