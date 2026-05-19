@@ -8,8 +8,9 @@ La présentation est en ligne ici : https://fbedecarrats.github.io/formation_zot
 
 - [documentation/01_sources](documentation/01_sources) : sources brutes et documents de référence
 - [documentation/02_planning](documentation/02_planning) : notes de préparation, cadrage, checklist
-- [slides/zotero-jeudi](slides/zotero-jeudi) : source de la présentation Quarto
-- [docs/slides/zotero-jeudi/index.html](docs/slides/zotero-jeudi/index.html) : rendu HTML
+- [index.qmd](index.qmd) : source principale de la présentation publiée
+- [slides/zotero-jeudi](slides/zotero-jeudi) : copie de travail et historique de la présentation
+- [docs/index.html](docs/index.html) : rendu HTML principal publié sur GitHub Pages
 - [assets/images](assets/images) : images et logos utilisés dans les slides
 - [handouts](handouts) : fiches à distribuer
 
@@ -17,7 +18,7 @@ La présentation est en ligne ici : https://fbedecarrats.github.io/formation_zot
 
 La présentation est éditée ici :
 
-- [slides/zotero-jeudi/index.qmd](slides/zotero-jeudi/index.qmd)
+- [index.qmd](index.qmd)
 
 ## Rendu
 
@@ -29,7 +30,7 @@ quarto render
 
 Le rendu est généré dans :
 
-- [docs/slides/zotero-jeudi/index.html](docs/slides/zotero-jeudi/index.html)
+- [docs/index.html](docs/index.html)
 
 ## Organisation retenue
 
