@@ -1,6 +1,8 @@
 # formation_zotero
 
 Préparation de la session **Zotero** pour le programme **PSF CREONS**.
+La présentation est en ligne ici : https://fbedecarrats.github.io/formation_zotero/
+
 
 ## Où se trouvent les éléments principaux ?
 
