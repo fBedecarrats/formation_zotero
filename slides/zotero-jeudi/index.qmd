@@ -1,6 +1,9 @@
 ---
 title: Zotero pour une bibliographie ouverte, collaborative et reproductible
-subtitle: PSF CREONS · Jeudi 28 mai 2026
+subtitle: |
+  PSF CREONS · Jeudi 28 mai 2026
+
+  [Dépôt GitHub](https://github.com/fBedecarrats/formation_zotero){.button}
 format:
   clean-revealjs:
     slide-number: true
