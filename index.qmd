@@ -274,9 +274,9 @@ Montrer qu'il est possible de refaire une version courte, réaliste et robuste. 
 
 Après la séance, on pourra produire :
 
-- une fiche exercice
-- une fiche mémo de bonnes pratiques
-- une version courte réutilisable localement
+- ce diaporama
+- la fiche exercice
+
 
 ::: notes
 Conclure sur les livrables et la suite du travail.
